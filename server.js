@@ -1,11 +1,11 @@
 // create my ports here and the listen to port
 const express = require('express');
-const path = require('path');
+// const path = require('path');
 
 const app = express();
 
-// port should never change, which is why this is all caps--
-const PORT = 3001;
+
+const PORT = process.env.PORT || 3001;
 
 // middlewear is what happens between our requsts and response servers
 // serves a static directory called 'public'
