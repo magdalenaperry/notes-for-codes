@@ -2,8 +2,6 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const util = require('util');
-// const res = require('express/lib/response');
-// const { response } = require('express');
 
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -12,15 +10,10 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// // routing files
-// const apiRoutes = require('./routes/APIroute');
-// const htmlRoutes = require('./routes/HTMLroute');
-
 // middleware 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 
 // GET route for notes page
 app.get('/api/notes', function(req, res) {
