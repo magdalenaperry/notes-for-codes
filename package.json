@@ -1,15 +1,24 @@
 {
-  "name": "note-taker",
+  "name": "notes-for-codes",
   "version": "1.0.0",
-  "description": "",
+  "description": "![](https://img.shields.io/badge/License-MIT-white.svg)",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magdalenaperry/notes-for-codes.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magdalenaperry/notes-for-codes/issues"
+  },
+  "homepage": "https://github.com/magdalenaperry/notes-for-codes#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "uuid": "^3.4.0"
+    "express": "^4.17.3"
   }
 }
